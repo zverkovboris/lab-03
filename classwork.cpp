@@ -13,38 +13,42 @@ int main() {
     std::cin >> q;
     std::cout << 1 << q << 13 << q << 49 << std::endl;  // print 1 13 49 with symbol between
     //////////////////////////////////////////
-    int a1 = 0, a2 = 0, a3 = 0;
     std::cout << "print 3 numbers" << std::endl;
+    int a1 = 0;
     std::cin >> a1;
+    int a2 = 0;
     std::cin >> a2;
+    int a3 = 0;
     std::cin >> a3;
     std::cout << a1 << "  " << a2 << "  " << a3 << std::endl;  // print 3 numbers with 2 ' '
     //////////////////////////////////////////
-    float a = 0;
     std::cout << "for solution a=" << std::endl;
+    float a = 0;
     std::cin >> a;
     std::cout << "y=12*a*a+7*a-12=" << 12 * a*a + 7 * a - 12 << std::endl;  // print solution
     ///////////////////////////////////////////////
-    float x = 0;
     std::cout << "for solution x=" << std::endl;
+    float x = 0;
     std::cin >> x;
     std::cout << "y=3*x*x*x+4*x*x-11*x+1=" << 3 * x*x*x + 4 * x*x - 11 * x + 1 << std::endl;
     //////////////////////////////////////////////
-    float m = 0, V = 0;
     std::cout << "mass" << std::endl;
+    float m = 0;
     std::cin >> m;
     std::cout << "volume" << std::endl;
-    std::cin >> V;
-    std::cout << "p=m/V=" << m / V << std::endl;
+    float v = 0;
+    std::cin >> v;
+    std::cout << "p=m/V=" << m / v << std::endl;
     //////////////////////////////////
-    float b = 0;
     std::cout << "a(<>0), b for ax+b=0" << std::endl;
     std::cin >> a;
+    float b = 0;
     std::cin >> b;
     std::cout << "x=" << (-b) / a << std::endl;
     /////////////////////////////////////////////
     float x1 = 0, x2 = 0, y1 = 0, y2 = 0;
     std::cout << "print a(x1,y1)" << std::endl;
+    
     std::cin >> x1;
     std::cin >> y1;
     std::cout << "print b(x2,y2)" << std::endl;
