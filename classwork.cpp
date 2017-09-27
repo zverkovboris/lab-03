@@ -9,7 +9,7 @@ int main() {
     char q= ' ';
     std:: cout << 1 << q << 13 << q << 49 << std::endl;// print 1 13 49
     //////////////////////////////////
-       std::cout << "symbol" << std::endl;
+    std::cout << "symbol" << std::endl;
     char w=0;
     std::cin >> w;
     std:: cout << 1 << w << 13 << w << 49 << std::endl;//print 1 13 49 with symbol between
@@ -41,7 +41,7 @@ int main() {
     std::cin >>V;
     float p=m/V;
     std::cout << "p=m/V=" << p << std::endl;
-    ///////////////////////////////////
+    //////////////////////////////////
     float b=0;
     std::cout <<"a(<>0), b for ax+b=0" << std::endl;
     std::cin >>a;
@@ -64,9 +64,7 @@ int main() {
     std::cin >> b1;
     std::cin >> b2;
     std::cout << "perimeter=" << b1+b2+2*sqrt(h*h+(b1-b2)*(b1-b2)/4);
-    //////////////////////////////////
+    /////////////////////////////////
 
-
-
-    return 0;
+return 0;
 }
