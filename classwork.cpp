@@ -4,7 +4,8 @@
 
 
 int main() {
-    std::cout << "Pi=" << 3.14 << std::endl;  // print pi
+    float pi=3.14
+    std::cout << "Pi=" << pi << std::endl;  // print pi
     ///////////////////////////////////////
     char q= ' ';
     std:: cout << 1 << q << 13 << q << 49 << std::endl;  // print 1 13 49
@@ -65,6 +66,23 @@ int main() {
     std::cin >> b2;
     std::cout << "perimeter=" << b1+b2+2*sqrt(h*h+(b1-b2)*(b1-b2)/4);
     /////////////////////////////////
-
+    std::cout << "print R,r for circles R>r" << std::endl;
+    float R= 0, r= 0;
+    std::cin >> R;
+    std::cin >> r;
+    std::cout << "S=pi(R*R-r*r)=" << pi*(R*R-r*r) << std::endl;
+    ///////////////////////
+    std::cout << "print the side of cube" << std::endl;
+    std::cin >> a;
+    std::cout << "V=a*a*a=" << a*a*a << std::endl;
+    std::cout << "S=6*a*a=" << 6*a*a << std::endl;
+    ///////////////////////
+    std::cout << "print the side of sqare" << std::endl;
+    std::cin >> a;
+    std::cout << "perimeter=a*4=" << 4*a << std::endl;
+    ///////////////////////
+    std::cout << "print r for circle" << std::endl;
+    std::cin >> r;
+    std::cout << "diameter=2*r=" << 2*r << std::endl;
 return 0;
 }
