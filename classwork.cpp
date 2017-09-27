@@ -4,7 +4,7 @@
 
 
 int main() {
-    float pi=3.14
+    float pi= 3.14;
     std::cout << "Pi=" << pi << std::endl;  // print pi
     ///////////////////////////////////////
     char q= ' ';
@@ -59,7 +59,7 @@ int main() {
     std::cin >> y2;
     std::cout << "distanse between a,b=" << sqrt((x1-x2)*(x1-x2)+(y1-y2)*(y1-y2)) << std::endl;
     ///////////////////////////
-    float h= 0, b1=0,b2=0;
+    float h= 0, b1= 0, b2= 0;
     std::cout << "print height,basis 1,basis2" << std::endl;
     std::cin >> h;
     std::cin >> b1;
