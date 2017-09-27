@@ -46,26 +46,29 @@ int main() {
     std::cin >> b;
     std::cout << "x=" << (-b) / a << std::endl;
     /////////////////////////////////////////////
-    float x1 = 0, x2 = 0, y1 = 0, y2 = 0;
     std::cout << "print a(x1,y1)" << std::endl;
-    
+    float x1 = 0;
     std::cin >> x1;
+    float y1 = 0;
     std::cin >> y1;
     std::cout << "print b(x2,y2)" << std::endl;
+    float x2 = 0;
     std::cin >> x2;
+    float y2 = 0;
     std::cin >> y2;
     std::cout << " betwen a, b=" << sqrt((x1 - x2)*(x1 - x2) + (y1 - y2)*(y1 - y2)) << std::endl;
     ///////////////////////////
-    float h = 0;
     std::cout << "print height,basis 1,basis2" << std::endl;
+    float h = 0;
     std::cin >> h;
     std::cin >> a;
     std::cin >> b;
     std::cout << "perimeter=" << a + b + 2 * sqrt(h*h + (a - b)*(a - b) / 4) << std::endl;
     /////////////////////////////////
     std::cout << "print R,r for circles R>r" << std::endl;
-    float R = 0, r = 0;
+    float R = 0;
     std::cin >> R;
+    float r = 0;
     std::cin >> r;
     std::cout << "S=pi(R*R-r*r)=" << pi*(R*R - r*r) << std::endl;
     ///////////////////////
