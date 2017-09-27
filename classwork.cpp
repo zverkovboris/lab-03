@@ -1,7 +1,6 @@
 #include <iostream>
 #include <math.h>
 
-
 int main() {
     float pi = 3.14;
     std::cout << "Pi=" << pi << std::endl;  // print pi
