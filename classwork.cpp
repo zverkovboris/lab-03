@@ -117,7 +117,7 @@ int main()
     a = 0;
     for (int i = 0; i < 20; ++i)
     {
-        if(i < 3)
+        if (i < 3)
         {
             a = q[i];
             q[i] = q[17+i];
@@ -140,7 +140,7 @@ int main()
         if ((a == 1) && (i <19))
         {
             std::cout << q[i+1] << " ";
-        } 
+        }
         else if (a == 0)
         {
             std::cout << q[i] << " ";
@@ -156,7 +156,7 @@ int main()
     {
         n = 20;
     }
-    a = 0; 
+    a = 0;
     std::cout << std::endl;
     for (int i = 0; i < n; ++i)
     {
@@ -170,7 +170,7 @@ int main()
         if ((a == 1) && (i < n-1))
         {
             std::cout << q[i+1] << " ";
-        } 
+        }
         else if (a == 0)
         {
             std::cout << q[i] << " ";
@@ -194,7 +194,8 @@ int main()
     else if (f1.size() < f2.size())
     {
         std::cout << "The second second name longer" << std::endl;
-    } else
+    }
+    else
     {
         std::cout << "second names have the same length" << std::endl;
     }
@@ -253,14 +254,14 @@ int main()
     for (int i = 0; i < a; ++i)
     {
         c1.push_back('*');
-        c1.insert(c1.begin(),'*');
+        c1.insert(c1.begin(), '*');
     }
     std::cout << c1 << std::endl;
     // sentence
     std::cout << "Print sentence: ";
     // fflush (stdin);
     std::cin.clear();
-    std::getline(std::cin,c1);
+    std::getline(std::cin, c1);
     a = c1.size();
     b = 0;
     for (int i = 0; i < a; ++i)
@@ -275,7 +276,6 @@ int main()
     std::cin.clear();
     c1 = "Can you can a can as a canner can can a can?";
     std::cout << "Print word that you want to see(not can) ";
-    
     std::cin >> c2;
     n = -1;
     n = c2.find("can");
@@ -290,16 +290,15 @@ int main()
         int o =0;
         do
         {
-            o = c1.find (" can ");
+            o = c1.find(" can ");
             if (o == 0)
             {
-                std::size_t o = c1.find (" can?");
-                
+                std::size_t o = c1.find(" can?");
             }
-            if ((n == 0) || ( o > n+m))
+            if ((n == 0) || ( o > n + m))
             {
                 n = o;
-                c1.replace (o+1, o+4, c2);
+                c1.replace(o+1, o+4, c2);
             }
         } while ( o != 0);
     }
