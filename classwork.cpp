@@ -89,7 +89,6 @@ int main()
             q[c] = mas[b];
             b +=1;
             c += 1;
-
         }
         if (num[a] < mas[b])
         {
