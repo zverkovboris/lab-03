@@ -42,7 +42,6 @@ int main()
                 c = num[i];
                 num[i] = num[j];
                 num[j] = c;
-
             }
         }
     }
@@ -69,7 +68,6 @@ int main()
                 c = mas[i];
                 mas[i] = mas[j];
                 mas[j] = c;
-
             }
         }
     }
@@ -102,7 +100,6 @@ int main()
             for (int i = b; i < n2; ++i)
                 std::cout << mas[i] << " ";
         }
-
     } while ((a < n1) && (b < n2));
     return 0;
 }
