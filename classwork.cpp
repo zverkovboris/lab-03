@@ -78,28 +78,49 @@ int main()
     std::cout << std::endl;
     int a = 0;
     int b = 0;
+    c = n1+n2;
+    std::vector <int> q(c);
+    c = 0;
     do
     {
         if (num[a] >= mas[b])
         {
             std::cout << mas[b] << " ";
+            q[c] = mas[b];
             b +=1;
+            c += 1;
+
         }
         if (num[a] < mas[b])
         {
             std::cout << num[a] << " ";
+            q[c] = num[a];
             a +=1;
+            c += 1;
         }
         if (b == n2 )
         {
             for (int i = a; i < n1; ++i)
-            std::cout << num[i] << " ";
+            {
+                std::cout << num[i] << " ";
+                q[c] = num[i];
+                c += 1;
+            }
         }
         if (a == n1 )
         {
             for (int i = b; i < n2; ++i)
+            {
                 std::cout << mas[i] << " ";
+                q[c] = mas[i];
+                c += 1;
+            }
         }
     } while ((a < n1) && (b < n2));
+    std::cout << std::endl;
+    for (int i = 0; i < n1+n2; ++i)
+    {
+        std::cout << q[i] << " ";
+    }
     return 0;
 }
