@@ -106,15 +106,15 @@ void main()
     Course ml3 = { "ML", Score(3) };
     Course ml4 = { "ML", Score(4) };
     Course ml5 = { "ML", Score(5) };
-    std::vector<Course> s1 = { al3,math3, ml3 };
-    std::vector<Course> s2 = { al4,math2, ml5 };
-    std::vector<Course> s3 = { al5,math5, ml5 };
-    std::vector<Course> s4 = { al2,math3, ml2 };
+    std::vector<Course> s1 = { al3, math3, ml3 };
+    std::vector<Course> s2 = { al4, math2, ml5 };
+    std::vector<Course> s3 = { al5, math5, ml5 };
+    std::vector<Course> s4 = { al2, math3, ml2 };
     Student student1 = { s1 };
     Student student2 = { s2 };
     Student student3 = { s3 };
     Student student4 = { s4 };
-    std::vector<Student> students = { student1,student2,student3,student4 };
+    std::vector<Student> students = { student1, student2, student3, student4 };
     std::cout << "Number of students with mark unsatisfactorily: " <<
         std::count_if(students.begin(), students.end(), UnsatisfactoryMark) << std::endl;
     std::cout << "Number of students whose all marks' excellent: " <<
